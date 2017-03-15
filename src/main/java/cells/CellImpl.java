@@ -1,10 +1,12 @@
 package cells;
 
+import lombok.EqualsAndHashCode;
 import lombok.Getter;
 
 import java.util.List;
 
 @Getter
+@EqualsAndHashCode
 public class CellImpl implements Cell {
 
     private final int file;
