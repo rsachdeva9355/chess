@@ -1,6 +1,6 @@
-package pieces;
+package model.pieces;
 
-public class King implements Piece {
+public class Pawn implements Piece {
 
     public boolean canJump() {
         return false;

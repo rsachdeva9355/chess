@@ -1,4 +1,4 @@
-package cells;
+package model.cells;
 
 import org.junit.Test;
 
@@ -9,24 +9,24 @@ import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.containsInAnyOrder;
 
 
-public class CellImplTests {
+public class CellsImplTests {
 
     @Test
     public void getCellsInTheSameFileShouldReturnExpectedCells() {
-        Cell cell = new CellImpl(1, 2);
-        List<Cell> expected = new ArrayList<Cell>();
+        Cells cell = new CellsImpl(1, 2);
+        List<CellsImpl> expected = new ArrayList<CellsImpl>();
         for (int iter = 0; iter < 8; iter++) {
-            expected.add(new CellImpl(1, iter));
+            expected.add(new CellsImpl(1, iter));
         }
         assertThat(cell.getCellsInTheSameFile(), containsInAnyOrder(expected.toArray()));
     }
 
     @Test
     public void getCellsInSameRankShouldReturnExpectedCells() {
-        Cell cell = new CellImpl(1, 2);
-        List<Cell> expected = new ArrayList<Cell>();
+        Cells cell = new CellsImpl(1, 2);
+        List<CellsImpl> expected = new ArrayList<CellsImpl>();
         for (int iter = 0; iter < 8; iter++) {
-            expected.add(new CellImpl(iter, 2));
+            expected.add(new CellsImpl(iter, 2));
         }
         assertThat(cell.getCellsInTheSameFile(), containsInAnyOrder(expected.toArray()));
     }

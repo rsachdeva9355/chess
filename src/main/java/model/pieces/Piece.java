@@ -1,4 +1,4 @@
-package pieces;
+package model.pieces;
 
 /**
  * Represents a chess piece.

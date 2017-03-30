@@ -1,18 +1,16 @@
-package cells;
+package model.cells;
 
-import lombok.EqualsAndHashCode;
-import lombok.Getter;
+import lombok.Value;
 
 import java.util.List;
 
-@Getter
-@EqualsAndHashCode
-public class CellImpl implements Cell {
+@Value
+public class CellsImpl implements Cells {
 
     private final int file;
     private final int rank;
 
-    CellImpl(int file, int rank) {
+    CellsImpl(int file, int rank) {
         this.file = file;
         this.rank = rank;
     }
