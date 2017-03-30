@@ -8,6 +8,16 @@ import model.pieces.Color;
 public interface Player {
 
     /**
+     * Gets the name of player.
+     */
+    String playerName();
+
+    /**
+     * Gets the rating of player.
+     */
+    int getRating();
+
+    /**
      * Gets the color of piece player is playing with.
      */
     Color getPieceColor();
