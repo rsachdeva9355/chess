@@ -20,5 +20,4 @@ public interface Move {
      * @return  The cell to move the piece to.
      */
     public Cell getDestinationPosition();
-
 }
