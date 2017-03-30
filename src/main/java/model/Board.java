@@ -1,5 +1,9 @@
 package model;
 
+import model.cells.Cell;
+import model.pieces.Color;
+import model.pieces.Piece;
+
 import java.util.Collection;
 
 /**
@@ -8,9 +12,18 @@ import java.util.Collection;
 public interface Board {
 
     /**
-     * Returns possible moves with the current state of board.
+     * Returns possible moves with the current state of board for a color.
      *
-     * @return The collection of possible moves.
      */
-    Collection<Move> getMoves();
+    Collection<Move> getMoves(Color color);
+
+    /**
+     * Returns the piece at a given cell.
+     */
+    Piece getPiece(Cell cell);
+
+    /**
+     * Finds where a piece is present.
+     */
+    Cell findPiece(Piece piece);
 }
