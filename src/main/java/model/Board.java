@@ -26,4 +26,14 @@ public interface Board {
      * Finds where a piece is present.
      */
     Cell findPiece(Piece piece);
+
+    /**
+     * Finds if the current state is checkmate.
+     */
+    boolean isCheckmate();
+
+    /**
+     * Finds if the current state is Stalamate.
+     */
+    boolean isStalemate();
 }

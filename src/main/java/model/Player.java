@@ -10,5 +10,10 @@ public interface Player {
     /**
      * Gets the color of piece player is playing with.
      */
-    Color getColor();
+    Color getPieceColor();
+
+    /**
+     * Makes a move given the board.
+     */
+    Move makeMove(Board board);
 }
