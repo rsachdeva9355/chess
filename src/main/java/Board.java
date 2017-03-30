@@ -1,5 +1,3 @@
-package model;
-
 import model.cells.Cell;
 import model.pieces.Color;
 import model.pieces.Piece;

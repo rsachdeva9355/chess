@@ -1,5 +1,3 @@
-package model;
-
 /**
  * Represents a chess game. Consists of a board with initial state and 2 players.
  */
@@ -25,4 +23,9 @@ public interface Game {
      * Finds out if the game has ended or not. Makes use of board's stalemate and checkmate.
      */
     boolean hasEnded();
+
+    /**
+     * Gets the winner.
+     */
+    Player getWinner();
 }

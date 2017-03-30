@@ -1,5 +1,3 @@
-package model;
-
 import model.cells.Cell;
 
 /**
@@ -12,12 +10,12 @@ public interface Move {
      *
      * @return  The postioned piece to be moved.
      */
-    public PositionedPiece getPiece();
+    PositionedPiece getPiece();
 
     /**
      * Gets the cell to move to.
      *
      * @return  The cell to move the piece to.
      */
-    public Cell getDestinationPosition();
+    Cell getDestinationPosition();
 }

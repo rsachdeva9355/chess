@@ -1,5 +1,3 @@
-package model;
-
 import model.cells.Cell;
 import model.pieces.Piece;
 
@@ -15,19 +13,19 @@ public interface PositionedPiece {
      *
      * @return  List of moves represented object can make.
      */
-    public List<Move> getMoves();
+    List<Move> getMoves();
 
     /**
      * Gets the position of the piece.
      *
      * @return  the cell on which piece is positioned.
      */
-    public Cell getPosition();
+    Cell getPosition();
 
     /**
      * Gets the positioned piece.
      *
      * @return the positioned piece.
      */
-    public Piece getPiece();
+    Piece getPiece();
 }
