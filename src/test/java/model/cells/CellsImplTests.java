@@ -1,5 +1,6 @@
 package model.cells;
 
+import model.cells.impl.CellsImpl;
 import org.junit.Test;
 
 import java.util.ArrayList;
