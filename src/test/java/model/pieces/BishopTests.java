@@ -14,6 +14,6 @@ public class BishopTests {
 
     @Test
     public void canJumpShouldReturnFalse() {
-        assertThat((new Bishop()).canJump(), is(false));
+        assertThat((new Bishop(Color.WHITE)).canJump(), is(false));
     }
 }

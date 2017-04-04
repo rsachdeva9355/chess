@@ -14,7 +14,6 @@ public class KingTests {
 
     @Test
     public void canJumpShouldReturnFalse() {
-        assertThat((new King(Color.BLACK)).canJump(), is(false));
         assertThat((new King(Color.WHITE)).canJump(), is(false));
     }
 }

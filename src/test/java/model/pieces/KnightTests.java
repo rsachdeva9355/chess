@@ -13,6 +13,6 @@ public class KnightTests {
 
     @Test
     public void canJumpShouldReturnTrue() {
-        assertThat((new Knight()).canJump(), is(true));
+        assertThat((new Knight(Color.WHITE)).canJump(), is(true));
     }
 }

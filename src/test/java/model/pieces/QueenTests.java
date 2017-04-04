@@ -14,6 +14,6 @@ public class QueenTests {
 
     @Test
     public void canJumpShouldReturnFalse() {
-        assertThat((new Queen()).canJump(), is(false));
+        assertThat((new Queen(Color.WHITE)).canJump(), is(false));
     }
 }

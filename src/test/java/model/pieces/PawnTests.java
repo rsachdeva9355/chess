@@ -14,6 +14,6 @@ public class PawnTests {
 
     @Test
     public void canJumpShouldReturnFalse() {
-        assertThat((new Pawn()).canJump(), is(false));
+        assertThat((new Pawn(Color.WHITE)).canJump(), is(false));
     }
 }

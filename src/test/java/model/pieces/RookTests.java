@@ -14,6 +14,6 @@ public class RookTests {
 
     @Test
     public void canJumpShouldReturnFalse() {
-        assertThat((new Rook()).canJump(), is(false));
+        assertThat((new Rook(Color.WHITE)).canJump(), is(false));
     }
 }
