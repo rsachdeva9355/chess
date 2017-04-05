@@ -1,10 +1,9 @@
-package model.cells.impl;
+package model.cells;
 
 import lombok.Value;
-import model.cells.Cell;
 
 @Value
-public class CellImpl implements Cell {
+class DefaultCell implements Cell {
     
     private final int file;
     private final int rank;
